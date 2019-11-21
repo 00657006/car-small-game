@@ -1,0 +1,197 @@
+.BB{
+    background-image: url("backgrounf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.d2{
+    position:absolute; 
+    left:525px; 
+    width:50%; 
+    top:170px;
+}
+.Title{
+    background-image: url("title.jpg");
+    font-size:200%;
+    font-weight: bold;
+    width:50%;
+}
+option {
+    font-weight: bold;
+    font-size: 100%;
+}
+.first{
+    background-image: url("224.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 525px 500px;
+}
+.original{
+    position:absolute; 
+    top:588px; 
+    left:580px; 
+    height:150px; 
+    width:150px;
+    z-index: 2;
+}
+.l1{
+    position:absolute; 
+    top:588px; 
+    left:380px; 
+    height:150px; 
+    width:150px;
+    z-index: 2;
+}
+.r1{
+    position:absolute; 
+    top:588px; 
+    left:780px; 
+    height:150px; 
+    width:150px;
+    z-index: 2;
+}
+.movel1 {
+    position: absolute;
+    height:150px; 
+    width:150px;
+    z-index: 2;
+    animation-name: examplel1;
+    animation-duration: 0.5s;
+}
+@keyframes examplel1 {
+    0%   { left:580px; top:588px;}
+    100%  { left:380px; top:588px;}
+}
+.movel2 {
+    position: absolute;
+    height:150px; 
+    width:150px;
+    z-index: 2;
+    animation-name: examplel2;
+    animation-duration: 0.5s;
+}
+@keyframes examplel2 {
+    0%   { left:780px; top:588px;}
+    100%  { left:580px; top:588px;}
+}
+.mover1 {
+    position: absolute;
+    height:150px; 
+    width:150px;
+    z-index: 2;
+    animation-name: exampler1;
+    animation-duration: 0.5s;
+}
+@keyframes exampler1 {
+    0%   { left:580px; top:588px;}
+    100%  { left:780px; top:588px;}
+}
+.mover2 {
+    position: absolute;
+    height:150px; 
+    width:150px;
+    z-index: 2;
+    animation-name: exampler2;
+    animation-duration: 0.5s;
+}
+@keyframes exampler2 {
+    0%   { left:380px; top:588px;}
+    100%  { left:580px; top:588px;}
+}
+.start1{
+    position:absolute;
+    animation-name: mid;
+    animation-duration: 3s;
+    z-index: 1;
+}
+@keyframes mid {
+    0%   { left:700px; top:300px;  width:50px;height: 50px;}
+    100%  { left:600px; top:540px; width:93px; height: 95px;}
+}
+.start2{
+    position:absolute;
+    animation-name: Left;
+    animation-duration: 3s;
+    z-index: 1;
+}
+@keyframes Left {
+    0%   { left:660px; top:300px;  width:50px;height: 50px;}
+    100%  { left:400px; top:540px; width:93px; height: 95px;}
+}
+.start3{
+    position:absolute;
+    animation-name: Right;
+    animation-duration: 3s;
+    z-index: 1;
+}
+@keyframes Right {
+    0%   { left:740px; top:300px;  width:50px;height: 50px;}
+    100%  { left:800px; top:540px; width:93px; height: 95px;}
+}
+.result{
+    background-image: url("result.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.count{
+    position:absolute;
+    top:150px;
+    left:420px;
+    width:50%;
+}
+.repre{
+    position:absolute;
+    top:140px;
+    left:670px;
+    z-index: 3;
+    font-size:200%;
+    font-weight: bold;
+}
+.now{
+    position:absolute;
+    top:320px;
+    left:580px;
+    z-index: 3;
+    font-size:200%;
+    font-weight: bold;
+}
+.until{
+    top:420px;
+    position:absolute;
+    left:580px;
+    z-index: 3;
+    font-size:200%;
+    font-weight: bold;
+}
+.make{
+    top:640px;
+    position:absolute;
+    left:750px;
+    z-index: 3;
+}
+.NN{
+    position:absolute;
+    top:220px;
+    left:580px;
+    z-index: 3;
+    font-size:200%;
+    font-weight: bold;
+}
+.rank{
+    position:absolute;
+    top:520px;
+    left:580px;
+    z-index: 3;
+    font-size:200%;
+    font-weight: bold;
+}
+.ppt:hover{
+    text-decoration:underline;
+    color:yellow;
+}
+.power{
+    position: absolute;
+    top:200px;
+    left:200px;
+}

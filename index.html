@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>車車小遊戲</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "car-css.css">
+        <script src = "car-JS.js"></script>
+    </head>
+    <body id="body" class="BB" onkeydown="move()">
+        <center>
+            <div id="power" style="display: none;" class="power">
+                <iframe src="https://onedrive.live.com/embed?cid=D3C35DA86D818908&amp;resid=D3C35DA86D818908%21263&amp;authkey=AOP0oW-IrHvVfQw&amp;em=2&amp;wdAr=1.3333333333333333" width="350px" height="286px" frameborder="0">這是 <a target="_blank" href="https://office.com/webapps">Office Online</a> 提供的內嵌 <a target="_blank" href="https://office.com">Microsoft Office</a> 簡報。</iframe>
+           </div>
+            <div id="result" class="repre"></div>
+            <div id="PP" class="NN"></div>
+            <div id="now" class="now"></div>
+            <div id="until" class="until"></div>
+            <div id="rank" class="rank"></div>
+            <input type="button" value="確認" id="make" style="display: none;" class="make">
+            <audio id = "m1" preload = "auto">
+                    <source src = "m1.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "m2" preload = "auto" >
+                    <source src = "m2.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "m3" preload = "auto" >
+                    <source src = "m3.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "m4" preload = "auto" >
+                    <source src = "m4.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "m5" preload = "auto" >
+                    <source src = "m5.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "m6" preload = "auto" >
+                    <source src = "m6.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "m7" preload = "auto">
+                    <source src = "m7.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "m8" preload = "auto">
+                    <source src = "m8.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "m9" preload = "auto">
+                    <source src = "m9.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "m10" preload = "auto">
+                    <source src = "m10.mp3" type = "audio/mpeg" loop=true>
+            </audio>
+            <audio id = "wi" preload = "auto">
+                <source src = "wi.mp3" type = "audio/mpeg">
+             </audio>
+             <audio id = "lo" preload = "auto">
+                <source src = "lo.mp3" type = "audio/mpeg">
+             </audio>
+            <div id="d1" class="Title">
+                <h1 >車車小遊戲</h1>
+            </div>
+            <div> 
+                <video id="l1" width="100%" style="display: none;">
+                    <source src="l1.mp4" type="video/mp4">
+                    <source src="l1.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>  
+                <video id="l2" width="100%" style="display: none;">
+                        <source src="l2.mp4" type="video/mp4">
+                        <source src="l2.ogg" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                </video>  
+                <video id="l3" width="100%" style="display: none;">
+                    <source src="l3.mp4" type="video/mp4">
+                    <source src="l3.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>  
+                <video id="c1win" width="15%"  style="display: none;position:absolute; top:525px;left:580px;">
+                    <source src="c1win.mp4" type="video/mp4">
+                    <source src="c1win.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video id="c1lose"width="15%"" style="display: none;position:absolute; top:525px;left:580px;">
+                    <source src="c1lose.mp4" type="video/mp4">
+                    <source src="c1lose.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+
+                <video id="c2win" width="15%" style="display: none;position:absolute; top:525px;left:580px;">
+                    <source src="c2win.mp4" type="video/mp4">
+                    <source src="c2win.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video id="c2lose"width="15%" style="display: none;position:absolute; top:525px;left:580px;">
+                    <source src="c2lose.mp4" type="video/mp4">
+                    <source src="c2lose.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video id="c3win" width="15%" style="display: none;position:absolute; top:525px;left:580px;">
+                    <source src="c3win.mp4" type="video/mp4">
+                    <source src="c3win.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video id="c3lose" width="15%" style="display: none;position:absolute; top:525px;left:580px;">
+                    <source src="c3lose.mp4" type="video/mp4">
+                    <source src="c3lose.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video id="c4win" width="15%" style="display: none;position:absolute; top:525px;left:580px;">
+                    <source src="c4win.mp4" type="video/mp4">
+                    <source src="c4win.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video id="c4lose" width="15%" style="display: none;position:absolute; top:525px;left:580px;">
+                    <source src="c4lose.mp4" type="video/mp4">
+                    <source src="c4lose.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            
+            <div id="d2" class="d2" style="display:null;"> 
+                <h2 style="color:cornsilk;">名字:</h2>
+                <input type="text" id="NN" placeholder="請輸入名字~~"  style="width:200px;">
+                <h2 style="color:lightgreen;">賽道</h2>
+                <form >
+                    <select name="location" style="width:200px; text-align: center;" id="location" >
+                        <option value="l1">地點一-巴拉卡公路(陽明山)(簡單)</option>
+                        <option value="l2">地點二-九彎十八拐(普通)</option>
+                        <option value="l3">地點三-Patiopoulo(希臘)(困難)</option>
+                    </select>
+                </form>
+                <h2 style="color:tomato;">車子</h2>
+                <form>
+                    <select name="car" style="width:200px; text-align: center;" id="car">
+                        <option value="c1">刀鋒9</option>
+                        <option value="c2">積木巴爾扎特9</option>
+                        <option value="c3">夜爵9</option>
+                        <option value="c4">加百列X</option>
+                    </select>
+                </form>
+                <h2 style="color:greenyellow;">BGM</h2>
+                <form>
+                    <select name="music" style="width:200px; text-align: center;" id="bgm">
+                        <option value="m1">白安-讓我逃離平庸的生活</option>
+                        <option value="m2">白安-離開後</option>
+                        <option value="m3">白安-我們的時代</option>
+                        <option value="m4">白安-鑽石</option>
+                        <option value="m5">白安-光之街</option>
+                        <option value="m6">白安-媽媽</option>
+                        <option value="m7">白安-一日一生</option>
+                        <option value="m8">白安-你愛我愛你</option>
+                        <option value="m9">白安-Frida</option>
+                        <option value="m10">白安-他不是你的唯一</option>
+                    </select>
+                </form>
+                <h1 style="color:hotpink">遊戲說明</h1>
+                <div>
+                    <img src="12.PNG">
+                    <img src="11.PNG">
+                </div>
+                <img src="225.PNG">
+                <div class="ppt" onclick="ppt()"><h1>網站說明</h1></div>
+                <h2><input type="button" value="確認" id="summit"></h2>
+            </div>
+            <hr width="5" id="hr1" size="130" style="position:absolute; left:550px; top:605px;display:none;">
+            <hr width="5" id="hr2" size="130" style="position:absolute; left:750px; top:605px; display:none;">
+            <hr width="5" id="hr3"size="130" style="position:absolute; left:350px; top:605px; display:none;">
+            <hr width="5" id="hr4" size="130" style="position:absolute; left:950px; top:605px; display:none;">
+        </center>
+    </body>
+</html>
